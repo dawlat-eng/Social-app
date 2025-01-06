@@ -14,16 +14,16 @@ import Loading from "@/app/loading/page";
 import Link from "next/link"; 
 
 export default function Login() {
-  let router = useRouter();
+  const router = useRouter();
   const dispatch = useDispatch<dispatchType>();
-  const [apiError, setApiError] = useState<string | null>(null);
+  // const [apiError, setApiError] = useState<string | null>(null);
   const { token, isloading } = useSelector((state: stateType) => state.auth);
 
   // Formik validation schema 
-  const validationSchema = Yup.object({
-    email: Yup.string().email("Invalid email address").required("Email is required"),
-    password: Yup.string().required("Password is required"),
-  });
+  // const validationSchema = Yup.object({
+  //   email: Yup.string().email("Invalid email address").required("Email is required"),
+  //   password: Yup.string().required("Password is required"),
+  // });
 
   // Initialize useFormik hook
   const formik = useFormik({
@@ -101,12 +101,12 @@ export default function Login() {
               />
             </Box>
 
-            {/* API Error Message */}
+            {/* API Error Message
             {apiError && (
               <Typography color="error" variant="body2" align="center" gutterBottom>
                 {apiError}
               </Typography>
-            )}
+            )} */}
 
             {/* Submit Button */}
             <Box sx={{ textAlign: "center", mt: 3 }}>

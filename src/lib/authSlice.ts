@@ -4,7 +4,7 @@ import axios from "axios";
 // Define the shape of the state
 interface AuthState {
   token: string | null;
-  userData: any;
+  userData: unknown;
   isloading: boolean;
   isError: boolean;
   error: string | null;

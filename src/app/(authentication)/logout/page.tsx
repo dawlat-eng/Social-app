@@ -15,7 +15,7 @@ export default function Logout() {
 
     // Redirect to login page
     router.push('/login'); // Redirect to login or home page
-  }, []);
+  }, [router]);
 
   return (
     <div>

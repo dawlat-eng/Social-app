@@ -15,11 +15,11 @@ import axios from "axios";
 import { RegisterValues } from "@/app/interfaces/Userinterface";
 import { useRouter } from "next/navigation";
 import Link from "next/link"; // Import Link from next/link
-import Loading from "@/app/loading/page";
+
 
 
 export default function Register() {
-  let router = useRouter();
+  const router = useRouter();
   const [loading, setLoading] = useState(false);
   const validationSchema = Yup.object({
     name: Yup.string().required("Name is required"),
