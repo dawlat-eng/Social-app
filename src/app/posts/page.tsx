@@ -20,7 +20,7 @@ import CommentIcon from '@mui/icons-material/Comment';
 import img from '../../../src/images/images.png';
 
 export default function Posts({postdata , allComments=false}:{postdata:PostInterface , allComments?:boolean}) {
- let router = useRouter()
+ const router = useRouter()
 
  let handleProfile = (id:string)=>{
   router.push(`/profile/${id}`)

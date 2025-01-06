@@ -10,7 +10,7 @@ import {
 } from "@mui/material";
 import PhotoCameraIcon from "@mui/icons-material/PhotoCamera";
 import SendIcon from "@mui/icons-material/Send";
-import CancelIcon from "@mui/icons-material/Cancel"; // Import Cancel Icon
+import CancelIcon from "@mui/icons-material/Cancel"; 
 import axios from "axios";
 
 export default function CreatePost() {
