@@ -61,8 +61,8 @@ export default function Posts({postdata , allComments=false}:{postdata:PostInter
   <CardMedia
     component="img"
     height="194"
-    image={postdata.image}
-    alt="Post image"
+    image={postdata?.image}
+    alt={postdata?.user.name}
   />
 ) : null}
 

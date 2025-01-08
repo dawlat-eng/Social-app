@@ -5,6 +5,9 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import Posts from '@/app/posts/page';
 
+
+
+
 export default function PostPage(props:{params:{id:string}}) {
 
   let dispatch = useDispatch<dispatchType>()
@@ -20,7 +23,7 @@ export default function PostPage(props:{params:{id:string}}) {
 
 
   return<>
-  <Posts postdata={singlePost} allComments={true}/>
+  <Posts postdata = {singlePost} allComments={true}/>
   
   
   </>
